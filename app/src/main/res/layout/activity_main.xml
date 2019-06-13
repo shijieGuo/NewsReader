@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <RadioGroup
+            android:id="@+id/navgroup"
+            android:background="@drawable/tab_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_weight="0.0">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                style="@style/tab_item_style"
+                android:background="@drawable/selector_tab_backgroud"
+                android:drawableTop="@drawable/selector_tab_1"
+                android:textColor="@drawable/selector_tab_textcolor"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/tab_item_style"
+                android:background="@drawable/selector_tab_backgroud"
+                android:drawableTop="@drawable/selector_tab_2"
+                android:textColor="@drawable/selector_tab_textcolor"
+                android:text="新闻" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                style="@style/tab_item_style"
+                android:background="@drawable/selector_tab_backgroud"
+                android:drawableTop="@drawable/selector_tab_3"
+                android:textColor="@drawable/selector_tab_textcolor"
+                android:text="组图" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                style="@style/tab_item_style"
+                android:background="@drawable/selector_tab_backgroud"
+                android:drawableTop="@drawable/selector_tab_4"
+                android:textColor="@drawable/selector_tab_textcolor"
+                android:text="更多" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
